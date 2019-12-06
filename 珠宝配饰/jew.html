@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/headfooter.css">
+    <style>
+        .main {
+            height: 1360px;
+        }
+
+        .mainc {
+            width: 1200px;
+            height: 100%;
+        }
+
+
+
+        .left1 {
+            margin-top: 50px;
+            width: 100%;
+            width: 714px;
+            height: 470px;
+            background: url(img/j1.png) no-repeat center;
+        }
+
+        .left2 {
+            margin-top: 50px;
+            width: 714px;
+            height: 470px;
+            background: url(img/j2.png) no-repeat center;
+        }
+
+        .mainright {
+            width: 486px;
+            height: 100%;
+            /* background-color: blue; */
+        }
+
+        .jew {
+            position: relative;
+            height: 470px;
+            background-color: #dddddd;
+        }
+
+        .jewc {
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            width: 1200px;
+            height: 100%;
+        }
+
+        .jewc .jewpic {
+            position: relative;
+            margin-top: 165px;
+            width: 100%;
+            height: 138px;
+        }
+
+        .jew .jewpic1 {
+            position: relative;
+            float: left;
+            width: 215px;
+            height: 138px;
+            background: url("img/j01.png") no-repeat center;
+        }
+
+        .jew .jewpic2 {
+            margin-left: 31px;
+            float: left;
+            width: 215px;
+            height: 138px;
+            background: url("img/j02.png") no-repeat center;
+        }
+
+        .jew .jewpic3 {
+            margin-left: 31px;
+            float: left;
+            width: 215px;
+            height: 138px;
+            background: url("img/j03.png") no-repeat center;
+        }
+
+        .jew .jewpic4 {
+            margin-left: 31px;
+            float: left;
+            width: 215px;
+            height: 138px;
+            background: url("img/j04.png") no-repeat center;
+        }
+
+        .jew .jewpic5 {
+            margin-left: 32px;
+            float: left;
+            width: 215px;
+            height: 138px;
+            background: url("img/j05.png") no-repeat center;
+        }
+        .jewpic .jewpic1txt{
+            position: absolute;
+            bottom: 0px;
+            display: none;
+            width: 21px;
+            height: 38px;
+            margin-left: 5px;
+            background:rgba(13, 113, 172, 0.2);
+            
+            color: white;
+            line-height: 19px;
+
+        }
+        .jewpic .jewhover:hover .jewpic1txt{
+            display: block;
+            width: 215px;
+            height: 38px;
+        }
+        .jew .arrowleft {
+            position: absolute;
+            left: 330px;
+            top: 50%;
+            margin-top: -25px;
+            width: 30px;
+            height: 50px;
+            background-color:#cacaca;
+            text-align: center;
+            line-height: 50px;
+            
+
+        }
+
+        .jew .arrowright {
+            position: absolute;
+            right: 330px;
+            top: 50%;
+            margin-top: -25px;
+            width: 30px;
+            height: 50px;
+            background-color:#cacaca    ;
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        .footer {
+            background-color: #4d4d4d;
+
+        }
+        
+        .footerleft1,
+        .footerleft2,
+        .footerright {
+            color: white;
+        }
+
+        .mainc {
+            margin: 0 auto;
+        }
+
+        .mainleft {
+            float: left;
+            width: 714px;
+            height: 100%;
+        }
+
+
+        .mainright {
+            position: relative;
+            float: left;
+
+        }
+
+        .mainright .txtright {
+            height: 230px;
+            background: url("img/txtright.png") no-repeat center;
+            margin-top: 50px;
+            margin-left: 10px;
+
+        }
+
+        .order {
+            position: absolute;
+            width: 150px;
+            height: 44px;
+            border: 1px solid #f5f5f5;
+            top: 350px;
+            left: 50%;
+            margin-left: -75px;
+            text-align: center;
+            line-height: 44px;
+        }
+
+        .order a {
+            display: block;
+            width: 150px;
+            height: 44px;
+            color: black;
+            font-size: 20px;
+        }
+
+        .txtleft {
+            height: 167px;
+            width: 100%;
+            background: url("img/lefttxt.png")no-repeat center;
+            margin-top: 30px;
+        }
+
+        .button input {
+            width: 42px;
+            height: 32px;
+            float: left;
+            background-color: #f7f5f5;
+
+            border: 0px;
+            margin-top: 100px;
+        }
+        .clr{
+            clear: both;
+        }
+
+        .jewmore{
+            position: absolute;
+            width: 150px;
+            height: 35px;
+            background-color: #dddddd;
+            left: 50%;
+            margin-left: -75px;
+            top :80%;
+            border: 1px solid #bbbaba;
+            text-align: center;
+            line-height: 35px;
+        }
+        .jewmore a{
+            display: block;
+            width: 150px;
+            height: 35px;
+            color: #bbbaba;
+        }
+        .footer a{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo"></div>
+
+        <ul class="nav">
+            <li class="navitem "><a href="../主页/index.html">首页</a>
+                <span class="line"></span>
+            </li>
+            <li class="navitem"><a href="../婚纱礼服详情页/weddingdetail.html">婚纱礼服</a>
+                <span class="line"></span>
+            </li>
+            <li class="navitem firstline"><a href="../珠宝配饰/jew.html">珠宝配饰</a>
+                <span class="line">
+
+            </li>
+            <li class="navitem"><a href="../最新活动/newactive.html">最新活动</a>
+                <span class="line">
+
+            </li>
+            <li class="navitem"><a href="../关于我们/aboutus.html">关于我们</a>
+                <span class="line">
+
+            </li>
+        </ul>
+
+
+
+    </div>
+    <div class="main">
+        <div class="mainc">
+            <div class="mainleft">
+                <div class="left1"></div>
+                <div class="left2"></div>
+                <div class="txtleft"></div>
+            </div>
+            <div class="mainright">
+                <div class="txtright"></div>
+                <div class="order">
+                    <a href="">立即预约</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="jew">
+
+            <div class="arrowleft">&lt;</div>
+            <div class="arrowright">&gt;</div>
+        <div class="jewc">
+            <div class="jewmore">
+                <a href="">MORE</a>
+                
+            </div>
+            <div class="button">
+                <div class="button1">
+                    <input type="button" value="戒指">
+                </div>
+                <div class="button2">
+                    <input type="button" value="项链">
+                </div>
+                <div class="button3">
+                    <input type="button" value="其他">
+                </div>
+            </div>
+            <div class="jewpic">
+                <div class="jewpic1 jewhover">
+                   <p class="jewpic1txt">水电费地方是的非官方很舒服的股份哈胜多负少的股</p>
+                </div>
+                
+                <div class="jewpic2 jewhover">
+                    <p class="jewpic1txt">水电费地方是的非官方很舒服的股份哈胜多负少的股</p>
+                </div>
+                
+                <div class="jewpic3 jewhover">
+                    <p class="jewpic1txt">水电费地方是的非官方很舒服的股份哈胜多负少的股</p>
+                </div>
+                
+                <div class="jewpic4 jewhover">
+                    <p class="jewpic1txt">水电费地方是的非官方很舒服的股份哈胜多负少的股</p>
+                </div>
+                
+                <div class="jewpic5 jewhover">
+                    <p class="jewpic1txt">水电费地方是的非官方很舒服的股份哈胜多负少的股</p>
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="footerleft1">
+            网站备案号：豫ICP备110121210号
+
+        </div>
+        <div class="footerleft2">
+            增值电信业务经营许可证号：豫B2-20100033
+        </div>
+        <div class="footerright">
+                ©2018 &nbsp;VERONICA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">联系我们</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">加入我们</a>
+            </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .head {
+
+            height: 80px;
+
+            background-color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        .head .logo {
+            float: left;
+            height: 80px;
+            width: 207px;
+            background: url(wedimg/logo.png) no-repeat center;
+            margin-left: 367px;
+
+        }
+
+        .nav {
+
+            float: left;
+            width: 900px;
+            height: 35px;
+
+            margin-top: 30px;
+
+        }
+
+        .nav .navitem {
+            position: relative;
+            float: left;
+            width: 69px;
+            height: 35px;
+            text-align: center;
+            margin-left: 80px;
+        }
+
+
+        .navitem a {
+            color: #7a7a7a;
+        }
+
+        .navitem .line {
+            position: absolute;
+            display: none;
+            width: 100%;
+            height: 2px;
+            background-color: #b9ab77;
+            top: 30px;
+            left: 0;
+        }
+
+        .navitem:hover .line {
+            display: block;
+        }
+
+        .nav .firstline .line {
+            display: block;
+        }
+
+        .nav .navitem:hover a {
+            color: #1d1d1d;
+        }
+
+        .nav .firstline a {
+            color: #1d1d1d;
+        }
+
+
+        .banner {
+            position: relative;
+            overflow: hidden;
+            height: 720px;
+            background-color: blue;
+            background: url(wedimg/banner1.png) no-repeat center;
+            background-size: cover;
+
+        }
+        .bannerc{
+            position: relative;
+            height: 100%;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .bannerc .dot{
+            position: absolute;
+            
+            width: 60px;
+            height: 15px;
+            left: 50%;
+            margin-left: -12.5px;
+            bottom: 20px;
+        }
+        .bannerc .dot1{
+            float: left;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            /* 透明色border */
+            border: 3px solid transparent;
+            /* 不让内部背景色填充border */
+            /* 背景色只作用在内部 */
+            background-clip: content-box;
+            margin-right: 6px;
+
+        }
+        .bannerc .dot1:hover{
+            border: 3px solid gray;
+        }
+
+        .bannerc .arrleft{
+            position: absolute;
+            text-align: center;
+            line-height: 80px;
+            font-size: 46px;
+            color: #dcdde0;
+            width: 50px;
+            height: 80px;
+            background-color: #c9cace;
+            left: -50px;
+            top: 50%;
+            margin-top: -40px;
+        }
+        .bannerc .arrright{
+            position: absolute;
+            text-align: center;
+            line-height: 80px;
+            font-size: 46px;
+            color: #dcdde0;
+            width: 50px;
+            height: 80px;
+            background-color: #c9cace;
+            right: -50px;
+            top: 50%;
+            margin-top: -40px;
+        }
+        .bannerc .arrright:hover{
+            background-color: #b9ab77;
+        }
+        .bannerc .arrleft:hover{
+            background-color: #b9ab77;
+        }
+
+        .banner .bannermore{
+            position: absolute;
+            background: url(wedimg/more.png);
+            width: 248px;
+            height: 83px;
+            right: 362px;
+            bottom: 215px;
+        }
+        .banner .bannermore a{
+            display: block;
+            width: 248px;
+            height: 83px;
+        }
+
+
+
+        .more {
+            width: 148px;
+            height: 44px;
+
+        }
+        .more a{
+            display: block;
+            width: 148px;
+            height: 44px;
+        }
+
+        .title {
+            text-align: center;
+            width: 150px;
+            height: 54px;
+            margin-top: 100px;
+        }
+
+        .title1 {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #c9c9c9
+        }
+
+
+
+
+
+        .titledes {
+            position: absolute;
+            left: 50%;
+            width: 150px;
+            height: 54px;
+            top: 102px;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            color: white;
+        }
+
+        .wedding {
+            overflow: hidden;
+            height: 829px;
+            background-color: #FFFFFF;
+            /* 版心1200 图高360   整高580 */
+        }
+
+        .nav1 {
+            width: 650px;
+            height: 50px;
+            margin: 0 auto;
+            /* margin-top: 80px; */
+
+        }
+
+        .nav1 .item1 {
+            float: left;
+
+            margin-left: 87px;
+
+        }
+       
+
+        .nav1 .item1 a {
+            color: black;
+            text-align: center;
+
+        }
+        .nav1 .item1.wedindex a{
+            color: #b9ab77;
+        }
+        .nav1 .item1.wedindex P{
+            color: #b9ab77;
+        }
+
+
+        .nav1 .item1:hover a{
+            color: #b9ab77;
+        }
+        .nav1 .item1:hover p{
+            color: #b9ab77;
+        }
+        .dot{
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        .nav1 .item1 .dot{
+            display: none;
+        }
+
+        .nav1 .item1:hover .dot{
+            display: block;
+        }
+        
+        .nav1 .item1 .firstdot{
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .jew {
+            height: 555px;
+            background-color: #F9F9F9;
+        }
+
+        .active {
+            position: relative;
+            height: 750px;
+            background-color: #FFFFFF;
+        }
+
+        .active-c {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .designer {
+            position: relative;
+            height: 664px;
+            width: 100%;
+            background-color: #4D4D4D;
+
+        }
+
+        .designer .desleft {
+            position: absolute;
+            height: 664px;
+            width: 400px;
+
+            background: url(wedimg/desleft.png) no-repeat center;
+            left: -6px;
+
+        }
+
+        .designer .desright {
+            position: absolute;
+            height: 664px;
+            width: 232px;
+            background: url(wedimg/desright.png) no-repeat center;
+            right: -5px;
+        }
+
+
+        .footer {
+            overflow: hidden;
+            position: relative;
+            height: 100px;
+            background-color: #FFFFFF;
+        }
+
+        .wedding-c,
+        .active-c,
+        .jew-c {
+
+            margin: 0 auto;
+            width: 1200px;
+            height: 100%;
+
+        }
+
+        .wedding-c {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jew-c {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .title {
+            font-size: 20px;
+            margin: 60px auto 60px;
+
+        }
+
+        .designer .despic {
+            /* width: 280px; */
+            position: absolute;
+            width: 1100px;
+            height: 400px;
+
+            left: 360px;
+            top: 200px;
+        }
+
+        .designer .despic1 {
+            float: left;
+            width: 280px;
+            height: 400px;
+            background-color: yellow;
+            margin: -100px 40px;
+            line-height: 20px;
+            font-size: 12px;
+            color: #a3a3a3;
+            text-align: center;
+            background: url("wedimg/d1.png") no-repeat center;
+
+
+
+            ;
+        }
+
+        .designer .despic2 {
+            float: left;
+            width: 280px;
+            height: 400px;
+            background-color: yellow;
+            margin: -100px 40px;
+            line-height: 20px;
+            font-size: 12px;
+            color: #a3a3a3;
+            text-align: center;
+            background: url("wedimg/d2.png") no-repeat center;
+        }
+
+        .designer .despic3 {
+            float: left;
+            width: 280px;
+            height: 400px;
+            background-color: yellow;
+            margin: -100px 40px;
+            line-height: 20px;
+            font-size: 12px;
+            color: #a3a3a3;
+            text-align: center;
+            background: url("wedimg/d3.png") no-repeat center;
+        }
+
+        .despic1txt {
+            margin-top: 330px;
+        }
+
+        .despic1txt .p4 a{
+            color: #a3a3a3;
+        }
+
+        .p1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .p4 {
+            margin-top: 30px;
+        }
+
+        .acbanner {
+            position: absolute;
+            background: url("wedimg/acbanner.png") no-repeat center;
+            width: 100%;
+            top: 150px;
+            height: 355px;
+            background-size:cover;
+        }
+
+        .divbox {
+            position: absolute;
+            left: 0px;
+            top: 265px;
+            width: 1200px;
+            height: 335px;
+        }
+
+        .divac {
+            float: left;
+            width: 300px;
+            height: 335px;
+            background-color: #FFFFFF;
+        }
+
+        .divac .p4 a{
+            color: #a3a3a3;
+        }
+
+        .divacimg {
+            float: left;
+            width: 300px;
+            height: 335px;
+            background: url("wedimg/ac1.png") no-repeat center;
+        }
+
+        .divac .p1 {
+            font-size: 30px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            color: #c2c2c2;
+
+        }
+
+        .divac .p1 span {
+            margin-left: 20px;
+            font-size: 12px;
+            color: #c2c2c2;
+        }
+
+        .divac .p2 {
+            font-size: 22px;
+            margin-left: 30px;
+            font-family: 微软雅黑;
+        }
+
+        .divac .p3 {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #c2c2c2;
+            margin-left: 30px;
+        }
+
+        .divac .p4 {
+            margin-top: 30px;
+            font-size: 23px;
+            color: #c2c2c2;
+            margin-left: 30px;
+        }
+
+        .more1{
+            position: absolute;
+            width: 150px;
+            height: 45px;
+            
+            background-color:transparent;
+            border: 1px solid #e2e1e1;
+            left: 50%;
+            top :88%;
+            transform: translate(-50%,-50%);
+            
+            text-align: center;
+            line-height: 45px;
+            
+        }
+        .more2{
+            position: absolute;
+            width: 150px;
+            height: 45px;
+            
+            background-color:transparent;
+            border: 1px solid #e2e1e1;
+            left: 50%;
+            top :88%;
+            transform: translate(-50%,-50%);
+            
+            text-align: center;
+            line-height: 45px;
+            
+        }
+        .more3{
+            position: absolute;
+            width: 150px;
+            height: 45px;
+            
+            background-color:transparent;
+            border: 1px solid #e2e1e1;
+            left: 50%;
+            top :88%;
+            transform: translate(-50%,-50%);
+            
+            text-align: center;
+            line-height: 45px;
+            
+        }
+
+        .more1 a{
+            display: block;
+            color:black;
+            width: 150px;
+            height: 45px;
+        }
+        .more2 a{
+            display: block;
+            color:black;
+            width: 150px;
+            height: 45px;
+        }
+        .more3 a{
+            display: block;
+            color:black;
+            width: 150px;
+            height: 45px;
+            
+        }
+        .wedpic{
+            width: 1200px;
+            height: 360px;
+            margin: 0 auto;
+        }
+        .wedpic1{
+            float: left;
+            width: 270px;
+            height: 360px;
+            background-color:blue;
+            margin-left: 23px;
+        }
+        .wedpic1.pic1{
+            background: url(wedimg/p1.png) no-repeat center;
+        }
+        .wedpic1.pic2{
+            background: url(wedimg/p2.png) no-repeat center;
+        }
+        .wedpic1.pic3{
+            background: url(wedimg/p3.png) no-repeat center;
+        }
+        .wedpic1.pic4{
+            background: url(wedimg/p4.png) no-repeat center;
+        }
+
+        .jewpic{
+            width: 1200px;
+            height: 180px;
+            margin: 0 auto;
+        }
+        .jewpic1{
+            float: left;
+            width: 270px;
+            height: 180px;
+            background-color:blue;
+            margin-left: 23px;
+        }
+        .jewpic1.pic1{
+            background: url(wedimg/j1.png) no-repeat center;
+        }
+        .jewpic1.pic2{
+            background: url(wedimg/j2.png) no-repeat center;
+        }
+        .jewpic1.pic3{
+            background: url(wedimg/j3.png) no-repeat center;
+        }
+        .jewpic1.pic4{
+            background: url(wedimg/j4.png) no-repeat center;
+        }
+        .footerleft1{
+            margin-left: 300px;
+            margin-top: 35px;
+            color: #323232;
+            font-size: 14px;
+        }
+        .footerleft2{
+            margin-left: 300px;
+            margin-top: 10px;
+            color: #323232;
+            font-size: 14px;
+        }
+        .footerright{
+            position: absolute;
+            color:#323232;
+            font-size: 14px;
+            right: 15%;
+            top :30%;
+        }
+        .footer a{
+            color: black;
+        }
+
+       
+        /* ac  banner   h  354 */
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo"></div>
+
+        <ul class="nav">
+                <li class="navitem firstline"><a href="../主页/index.html">首页</a>
+                    <span class="line"></span>
+                </li>
+                <li class="navitem"><a href="../婚纱礼服详情页/weddingdetail.html">婚纱礼服</a>
+                    <span class="line"></span>
+                </li>
+                <li class="navitem "><a href="../珠宝配饰/jew.html">珠宝配饰</a>
+                    <span class="line">
+    
+                </li>
+                <li class="navitem"><a href="../最新活动/newactive.html">最新活动</a>
+                    <span class="line">
+    
+                </li>
+                <li class="navitem"><a href="../关于我们/aboutus.html">关于我们</a>
+                    <span class="line">
+    
+                </li>
+            </ul>
+
+
+
+    </div>
+
+    <div class="banner">
+        <div class="bannerc">
+            <div class="dot">
+                <div class="dot1"></div>
+                <div class="dot1"></div>
+            </div>
+            
+            <div class="arrleft">&lt;</div>
+            <div class="arrright">&gt;</div>
+        </div>
+        <div class="bannermore">
+            <a href="#"></a>
+        </div>
+    </div>
+    <div class="wedding">
+        <div class="wedding-c">
+            <div class="title">
+                <p>婚纱礼服</p>
+                <p class="title1">Wedding Dress</p>
+            </div>
+            <ul class="nav1">
+                <li class="item1 wedindex"><a href="">新品/NEW</a>
+                    <p class="dot firstdot">·</p>
+                </li>
+                <li class="item1"><a href="">2018春夏</a>
+                    <p class="dot">·</p>
+                </li>
+                
+                <li class="item1"><a href="">2018秋冬</a>
+                    <p class="dot">·</p>
+                </li>
+                
+                <li class="item1"><a href="">专属定制</a>
+                    <p class="dot">·</p>
+                </li>
+                
+            </ul>
+            <div class="wedpic">
+                    <div class="wedpic1 pic1" ></div>
+                    <div class="wedpic1 pic2"></div>
+                    <div class="wedpic1 pic3"></div>
+                    <div class="wedpic1 pic4"></div>
+            </div>
+            
+            <div class="more3">
+                    <a href="">MORE</a>
+                </div>
+        </div>
+    </div>
+    <div class="jew">
+        <div class="jew-c">
+            <div class="title">
+                <p>珠宝配饰</p>
+                <p class="title1">Jewelry Show</p>
+            </div>
+            <div class="more1">
+                <a href="">MORE</a>
+                
+            </div>
+            <div class="jewpic">
+                <div class="jewpic1 pic1"></div>
+                <div class="jewpic1 pic2"></div>
+                <div class="jewpic1 pic3"></div>
+                <div class="jewpic1 pic4"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="active">
+        <div class="acbanner"></div>
+        <div class="active-c">
+            <div class="title">
+                <p>最新活动</p>
+                <p class="title1">Latest Activities</p>
+            </div>
+            <div class="divbox">
+                <div class="divac">
+                    <p class="p1">06-18<span>2018</span> </p>
+                    <p class="p2">新品发布会</p>
+                    <p class="p3">伴随着T台两侧色彩趋势报告的发布</p>
+                    <p class="p3">VERONICA2017婚纱新品发布会正...</p>
+                    <p class="p4"> <a href="">more &gt;</a> </p>
+                </div>
+                <div class="divacimg">
+
+                </div>
+                <div class="divac">
+                    <p class="p1">06-18<span>2018</span> </p>
+                    <p class="p2">新品发布会</p>
+                    <p class="p3">伴随着T台两侧色彩趋势报告的发布</p>
+                    <p class="p3">VERONICA2017婚纱新品发布会正...</p>
+                    <p class="p4"> <a href="">more &gt;</a> </p>
+                </div>
+                <div class="divac">
+                    <p class="p1">06-18<span>2018</span> </p>
+                    <p class="p2">新品发布会</p>
+                    <p class="p3">伴随着T台两侧色彩趋势报告的发布</p>
+                    <p class="p3">VERONICA2017婚纱新品发布会正...</p>
+                    <p class="p4"> <a href="">more &gt;</a> </p>
+                </div>
+            </div>
+
+
+
+            <div class="more2">
+                <a href="">MORE</a>
+                    
+                </div>
+        </div>
+    </div>
+    <div class="designer">
+
+        <div class="desleft"></div>
+        <div class="titledes">
+            <p>设计师</p>
+            <p class="title1">Designers</p>
+        </div>
+        <div class="desright"></div>
+        <div class="despic">
+            <div class="despic1">
+                <div class="despic1txt">
+                    <p class="p1"> Jason.W</p>
+                    <p>首席设计师</p>
+                    <p>法国时装设计师，VERONICA品牌创始人之一，设计</p>
+                    <p>总监，2018福布斯最具影响力的设计师...</p>
+                    <p class="p4"> <a href="">MORE</a> </p>
+                    <p class="p5">___________________</p>
+                </div>
+
+            </div>
+            <div class="despic2">
+                <div class="despic1txt">
+                    <p class="p1"> Jason.W</p>
+                    <p>首席设计师</p>
+                    <p>法国时装设计师，VERONICA品牌创始人之一，设计</p>
+                    <p>总监，2018福布斯最具影响力的设计师...</p>
+                    <p class="p4"> <a href="">MORE</a> </p>
+                    <p class="p5">___________________</p>
+                </div>
+            </div>
+            <div class="despic3">
+                <div class="despic1txt">
+                    <p class="p1"> Jason.W</p>
+                    <p>首席设计师</p>
+                    <p>法国时装设计师，VERONICA品牌创始人之一，设计</p>
+                    <p>总监，2018福布斯最具影响力的设计师...</p>
+                    <p class="p4"> <a href="">MORE</a> </p>
+                    <p class="p5">___________________</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="footerleft1">
+            网站备案号：豫ICP备110121210号
+
+        </div>
+        <div class="footerleft2">
+            增值电信业务经营许可证号：豫B2-20100033
+        </div>
+        <div class="footerright">
+                ©2018 &nbsp;VERONICA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">联系我们</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">加入我们</a>
+            </div>
+    </div>
+
+
+</body>
+
+</html>

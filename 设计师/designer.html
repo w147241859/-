@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/headfooter.css">
+    <style>
+        .head {
+            height: 80px;
+        }
+
+        .banner {
+            height: 270px;
+
+            background-color: #000000;
+        }
+
+        .banner .bannerfish {
+            float: left;
+            width: 765px;
+            height: 269px;
+            background: url("img/fish.png") no-repeat right;
+            margin-left: 565px;
+        }
+
+        .main {
+            height: 1142px;
+        }
+
+        .mainc {
+            overflow: hidden;
+            height: 1142px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .mainc .title {
+            height: 210px;
+            width: 100%;
+            text-align: center;
+            
+        }
+
+        .title .p1 {
+            margin-top: 100px;
+            font-size: 20px;
+        }
+
+        .title .p2 {
+            margin-top: 10px;
+            color: gray;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: #4d4d4d;
+        }
+
+        .pic {
+            width: 100%;
+            height: 450px;
+        }
+
+        .pic1 {
+            float: left;
+            width: 300px;
+            height: 450px;
+            background: url("img/p1.png");
+            margin: 0 50px;
+        }
+
+        .pic2 {
+            float: left;
+            width: 300px;
+            height: 450px;
+            background: url("img/p2.png");
+            margin: 0 50px;
+        }
+
+        .pic3 {
+            float: left;
+            width: 300px;
+            height: 450px;
+            background: url("img/p3.png");
+            margin: 0 50px;
+        }
+        .txt {
+            width: 100%;
+            height: 380px;
+        }
+        .txt1{
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 380px;
+            margin: 0 50px;
+            text-align: center;
+        }
+        .txt2{
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 380px;
+            margin: 0 50px;
+            text-align: center;
+        }
+        .txt3{
+            position: relative;
+            float: left;
+            width: 300px;
+            height: 380px;
+            margin: 0 50px;
+            text-align: center;
+        }
+        .txt0 .p1{
+            margin-top: 30px;
+            font-size: 18px;
+        }
+        .txt0 .p2{
+            margin-top: 10px;
+            font-size: 14px;
+            color: #c2c2c2;
+        }
+        .txt0 .p3{
+            margin-top: 30px;
+            font-size: 14px;
+            color: #c2c2c2;
+            text-align: left;
+            text-indent: 2em;
+            line-height: 20px;
+        }
+       
+        .more1{
+            position: absolute;
+            width: 150px;
+            height: 45px;
+            
+            background-color:transparent;
+            border: 1px solid #b9ab77;
+            left: 50%;
+            top :58%;
+            transform: translate(-50%,-50%);
+            
+            text-align: center;
+            line-height: 45px;
+            display: none;
+            
+        }
+        .more2{
+            position: absolute;
+            width: 150px;
+            height: 45px;
+            
+            background-color:transparent;
+            border: 1px solid #b9ab77;
+            left: 50%;
+            top :58%;
+            transform: translate(-50%,-50%);
+            
+            text-align: center;
+            line-height: 45px;
+            display: none;
+            
+        }
+        .more3{
+            position: absolute;
+            width: 150px;
+            height: 45px;
+            
+            background-color:transparent;
+            border: 1px solid #b9ab77;
+            left: 50%;
+            top :58%;
+            transform: translate(-50%,-50%);
+            
+            text-align: center;
+            line-height: 45px;
+            display: none;
+            
+        }
+
+        .txt1:hover .more1{
+            display: block;
+        }
+        .txt2:hover .more2{
+            display: block;
+        }
+        .txt3:hover .more3{
+            display: block;
+        }
+
+        .line0{
+            display: none;
+            position: absolute;
+            width: 180px;
+            height: 3px;
+            background-color: #b9ab77;
+            bottom: 100px;
+            left: 20%;
+            margin-left: -75px;
+            margin: 0 auto;
+        }
+        .txt1:hover .line1{
+            display: block;
+        }
+        .txt2:hover .line2{
+            display: block;
+        }
+        .txt3:hover .line3{
+            display: block;
+        }
+
+        .nav .firstline .line {
+            display: none;
+        }
+        .nav .firstline:hover .line {
+            display: block;
+        }
+        
+
+        .nav .about .line {
+            display: block;
+        }
+
+        .nav .firstline a {
+            color: #7a7a7a;
+        }
+        
+        .nav .about a {
+            color: black;
+        }
+        
+        .footer{
+            position: relative;
+            overflow: hidden;
+            
+        }
+        .footerright{
+            position: absolute;
+            
+            font-size: 14px;
+            right: 300px;
+            top :40%;
+            color: white;
+        }
+        .footerleft1{
+            color: white;
+        }
+        .footerleft2{
+            color: white;
+        }
+        .footer a{
+            color: white;
+        }
+       
+   
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo"></div>
+
+        <ul class="nav">
+                <li class="navitem "><a href="../主页/index.html">首页</a>
+                    <span class="line"></span>
+                </li>
+                <li class="navitem"><a href="../婚纱礼服详情页/weddingdetail.html">婚纱礼服</a>
+                    <span class="line"></span>
+                </li>
+                <li class="navitem firstline"><a href="../珠宝配饰/jew.html">珠宝配饰</a>
+                    <span class="line">
+    
+                </li>
+                <li class="navitem"><a href="../最新活动/newactive.html">最新活动</a>
+                    <span class="line">
+    
+                </li>
+                <li class="navitem"><a href="../关于我们/aboutus.html">关于我们</a>
+                    <span class="line">
+    
+                </li>
+            </ul>
+
+
+
+    </div>
+    <div class="banner">
+        <div class="bannerfish"></div>
+    </div>
+    <div class="main">
+        <div class="mainc">
+            <div class="title">
+                <p class="p1">设计师</p>
+                <p class="p2">Designer</p>
+            </div>
+            <div class="pic">
+                <div class="pic1"></div>
+                <div class="pic2"></div>
+                <div class="pic3"></div>
+            </div>
+            <div class="txt">
+                <div class="txt0 txt1">
+                    <p class="p1">吉恩/JENNY</p>
+                    <p class="p2">VERONICA的视觉艺术总监</p>
+                    <p class="p3">吉恩，中国时装设计师代表JICHENG/织货
+                        byjicheng品牌创始人、设计总监、2015福布斯
+                    </p>
+                    <div class="more1 firstmore">MORE</div>
+                    <div class="line0 line1"></div>
+                    
+                </div>
+                <div class="txt0 txt2">
+                    <p class="p1">吉恩/JENNY</p>
+                    <p class="p2">VERONICA的视觉艺术总监</p>
+                    <p class="p3">吉恩，中国时装设计师代表JICHENG/织货
+                        byjicheng品牌创始人、设计总监、2015福布斯
+                    </p>
+                    <div class="more2">MORE</div>
+                    <div class="line0 line2"></div>
+                </div>
+                <div class="txt0 txt3">
+                    <p class="p1">吉恩/JENNY</p>
+                    <p class="p2">VERONICA的视觉艺术总监</p>
+                    <p class="p3">吉恩，中国时装设计师代表JICHENG/织货
+                        byjicheng品牌创始人、设计总监、2015福布斯
+                    </p>
+                    <div class="more3">MORE</div>
+                    <div class="line0 line3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerleft1">
+            网站备案号：豫ICP备110121210号
+
+        </div>
+        <div class="footerleft2">
+            增值电信业务经营许可证号：豫B2-20100033
+        </div>
+        <div class="footerright">
+                ©2018 &nbsp;VERONICA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">联系我们</a> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">加入我们</a>
+            </div>
+    </div>
+
+</body>
+
+</html>
